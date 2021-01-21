@@ -1,4 +1,10 @@
 #!/bin/bash
+
+# colab does not have virtualenv, so lets install it
+pip install virtualenv
+
+
+
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 # Create virtualenv
@@ -7,7 +13,7 @@ virtualenv -p python3.6 ${ENV_DIR}
 source ${ENV_DIR}/bin/activate
 
 # Install python dependencies
-pip install -r ${SCRIPT_DIR}/requirements.txt
+# pip install -r ${SCRIPT_DIR}/requirements.txt
 
 # Install external repositories
 TOOLS_DIR=${SCRIPT_DIR}/tools
