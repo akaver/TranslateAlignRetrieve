@@ -5,7 +5,7 @@ ENV_DIR=${SCRIPT_DIR}/env/bin
 source $ENV_DIR/activate
 
 # minimal set of packages needed
-pip install fasttext tqdm subword-nmt
+pip install fasttext tqdm subword-nmt Cython
 
 # download fasttext models for language identification
 mkdir -p /content/TranslateAlignRetrieve/src/tar/src/nmt/data/fastText

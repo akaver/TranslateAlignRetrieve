@@ -33,7 +33,8 @@ git clone https://github.com/robertostling/eflomal.git ${TOOLS_DIR}/eflomal
 cd ${EFLOMAL_DIR}
 make
 make install
-pip install .
+#pip install .
+python3 setup.py install
 cd ${SCRIPT_DIR}
 
 # FastAlign
