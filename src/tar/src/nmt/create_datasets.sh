@@ -21,7 +21,7 @@ fi
 SRC_TO_TGT=${SRC_LANG}'2'${TGT_LANG}
 DATASETS_DIR=${SCRIPT_DIR}/data/${SRC_TO_TGT}/datasets
 mkdir -p ${DATASETS_DIR}
-python ${SCRIPT_DIR}/src/create_datasets.py \
+python ${SCRIPT_DIR}/create_datasets.py \
     --source_file ${SRC_FILE} \
     --source_lang ${SRC_LANG} \
     --target_file ${TGT_FILE} \
