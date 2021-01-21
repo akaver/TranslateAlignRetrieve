@@ -35,7 +35,7 @@ cd ${EFLOMAL_DIR}
 make
 make install
 #pip install .
-python3 setup.py install
+python setup.py install
 cd ${SCRIPT_DIR}
 
 # FastAlign
